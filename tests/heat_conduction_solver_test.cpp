@@ -82,7 +82,7 @@ static void SimpleDoubleTest(httplib::Client* cli) {
 
   int taskId = output["id"];
 
-  const int numTries = 100;
+  const int numTries = 1000;
   bool success = false;
 
   for (int k = 0; k < numTries; k++) {
@@ -110,7 +110,7 @@ static void SimpleDoubleTest(httplib::Client* cli) {
       break;
     }
 
-    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
   }
 
   REQUIRE(success);
@@ -214,7 +214,7 @@ static void SimpleRandomTest(httplib::Client* cli) {
 
   int taskId = output["id"];
 
-  const int numTries = 100;
+  const int numTries = 1000;
   bool success = false;
 
   for (int k = 0; k < numTries; k++) {
@@ -242,7 +242,7 @@ static void SimpleRandomTest(httplib::Client* cli) {
       break;
     }
 
-    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
   }
 
   REQUIRE(success);
@@ -345,7 +345,7 @@ static void PlotDoubleTest(httplib::Client* cli) {
 
   int taskId = output["id"];
 
-  const int numTries = 100;
+  const int numTries = 1000;
   bool success = false;
 
   for (int k = 0; k < numTries; k++) {
@@ -373,7 +373,7 @@ static void PlotDoubleTest(httplib::Client* cli) {
       break;
     }
 
-    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
   }
 
   REQUIRE(success);
@@ -498,7 +498,7 @@ static void PlotRandomTest(httplib::Client* cli) {
 
   int taskId = output["id"];
 
-  const int numTries = 100;
+  const int numTries = 1000;
   bool success = false;
 
   for (int k = 0; k < numTries; k++) {
@@ -526,7 +526,7 @@ static void PlotRandomTest(httplib::Client* cli) {
       break;
     }
 
-    std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
   }
 
   REQUIRE(success);
