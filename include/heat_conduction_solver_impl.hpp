@@ -31,8 +31,6 @@ HeatConductionSolver<T>::HeatConductionSolver(
   }
 }
 
-const int num_threads = 3;
-
 template<typename T>
 bool HeatConductionSolver<T>::MakeStep() {
   // Пересчет двумерного индекса в одномерный для всех ячеек решётки
@@ -130,7 +128,7 @@ bool HeatConductionSolver<T>::MakeStep() {
         }
     }
   };
-
+  int num_threads = std::thread::hardware_concurrency();
   for (int i = 0; i < M*(M-1); ++i) {
       double divisor = A[indMatrix(i, i)];
       for (int j = i; j < M*(M-1); ++j) A[indMatrix(i, j)] /= divisor;
