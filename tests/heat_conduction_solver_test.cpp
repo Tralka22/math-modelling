@@ -54,7 +54,7 @@ static void SimpleDoubleTest(httplib::Client* cli) {
 {
   "value_type": "double",
   "M": 20,
-  "tau": 0.00025,
+  "tau": 0.0025,
   "finish_time": 1.0,
   "export_period": 0.02,
   "rand": false
@@ -186,7 +186,7 @@ static void SimpleRandomTest(httplib::Client* cli) {
 {
   "value_type": "double",
   "M": 20,
-  "tau": 0.00025,
+  "tau": 0.0025,
   "finish_time": 1.0,
   "export_period": 0.02,
   "rand": true
@@ -317,7 +317,7 @@ static void PlotDoubleTest(httplib::Client* cli) {
 {
   "value_type": "double",
   "M": 20,
-  "tau": 0.00025,
+  "tau": 0.0025,
   "finish_time": 1.0,
   "export_period": 0.01,
   "rand": false
@@ -470,7 +470,7 @@ static void PlotRandomTest(httplib::Client* cli) {
 {
   "value_type": "double",
   "M": 20,
-  "tau": 0.00025,
+  "tau": 0.0025,
   "finish_time": 1.0,
   "export_period": 0.01,
   "rand": true
